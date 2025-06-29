@@ -1,0 +1,9 @@
+body {
+  font: sans-serif;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: black;
+}

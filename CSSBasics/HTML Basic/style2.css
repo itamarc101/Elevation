@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(254, 254, 174, 0.715);
+    font-family: Georgia, serif;
+    margin: 20px;
+}
+
+.main-header {
+    text-shadow: 1px 1px #836e4a;
+    font-weight: bold;
+    color: #ff5722;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-left: 6px solid #0d63ba;
+  background-color: #d0ecff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #0d63ba
+}
+
+ol, ul {
+    background-color:#edf6ff ;
+}
+
+ol > li strong, ul > li strong {
+    color: #dd9309;
+}

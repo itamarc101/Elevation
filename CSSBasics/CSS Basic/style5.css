@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+}
+
+table.league-table {
+  width: 700 px;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #ccffcc;
+  border: 1px solid #000;
+}
+
+.league-table {
+  width: 400px;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.league-table thead {
+  background-color: #f3f3f3;
+}
+
+.league-table th {
+  font-weight: bold;
+}
+
+.league-table td:nth-child(2) {
+  font-weight: bold;
+}
+
+.league-table tbody td:last-child {
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+}
+
+.bookmark {
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  padding: 10px 7px;
+  margin: 2px;
+  border: 1px solid #ccc;
+
+  background-color: palegoldenrod;
+}

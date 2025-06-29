@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+}
+
+.bookmark {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px;
+  margin: 2px;
+}
+
+.bookmark img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}

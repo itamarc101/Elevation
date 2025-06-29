@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(234, 244, 240);
+
+}
+
+.main-header {
+    color: purple;
+    text-align: center;
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    /* padding: 20px; */
+    text-align: center;
+    font-weight: bold;
+
+}
+
+em {
+    color: rgb(61, 255, 119);
+}
+
+h2 {
+    color: rgb(63, 169, 169);
+    border-bottom: 2px solid rgb(63, 169, 169);
+    padding-bottom: 5px;
+}
+
+hr {
+    height: 2px;
+    background-color: rgb(61, 93, 255);
+
+}
+strong {
+    color: rgb(61, 93, 255);
+}
+
+h3 {
+    color: rgb(63, 169, 169);
+    border-bottom: 2px solid rgb(63, 169, 169);
+    padding-bottom: 5px;
+}

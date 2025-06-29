@@ -1,0 +1,73 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: blueviolet;
+    text-align: center;
+}
+
+
+
+form {
+    background-color: #f1bdbd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.box {
+  border: 2px solid #2196f3;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f7f9fb;
+}
+
+legend {
+    background-color: white;;
+    color: blueviolet;
+    font-weight: bold;
+    text-align: left;
+}
+
+fieldset {
+    color: black;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(86, 97, 107)
+}
+
+.buttons{
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+
+}
+
+.btn {
+    font-weight: bold;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-red {
+    background-color: #f44336;
+    color: white;
+}

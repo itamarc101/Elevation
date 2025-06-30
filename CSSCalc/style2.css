@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  width: 40%;
+  border: 2px solid deeppink;
+  height: 8vh;
+  box-sizing: border-box;
+}
+
+.container > div {
+    border: 2px solid black;
+    background-color: pink;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+}
+
+/* .left-section {
+  width: calc(100% /3);
+  background-color: pink;
+}
+
+.mid-section {
+  width: calc(100% /3);
+  background-color: lightblue;
+}
+
+.right-section {
+  width: calc(100% /3);
+  background-color: rgb(255, 119, 141);
+} */

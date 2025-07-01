@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="main-header">Contact Form</h1>
+        <p class="secondaty">Get in touch with us</p>
+
+        <form>
+            <div class="form-detail">
+                <div class="info">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="">
+                </div>
+                <div class="info">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="">
+                </div>
+            </div>
+
+            <div class="info">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" placeholder="">
+            </div>
+
+            <div class="form-detail">
+                <div class="info">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="">Select a topic</option>
+                        <option value="general">General Inquity</option>
+                        <option value="support">Technical Support</option>
+                        <option value="billing">Billing Question</option>
+                    </select>
+                </div>
+
+                <div class="info">
+                    <label for="priority">Priority</label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="info">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell us how we can help..."></textarea>
+            </div>
+
+            <div class="info">
+                <label class="contact-info">Contact Preferences</label>
+                <div class="checkboxes-container">
+                    <div class="checkboxes">
+                        <input type="checkbox" id="email-updates">
+                        <label for="email-updates" class="ck">Email Updates</label>
+                    </div>
+            
+                    <div class="checkboxes">
+                        <input type="checkbox" id="phone-updates">
+                        <label for="phone-updates" class="ck">Phone Follow-Up</label>
+                    </div>
+                
+                    <div class="checkboxes">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter" class="ck">Newsletter</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+            <div class="left-buttons">
+                <button type="button" class="btn btn-save">Save Draft</button>
+            </div>
+            <div class="right-buttons">
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

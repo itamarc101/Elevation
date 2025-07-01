@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    width: 40%;
+    margin: auto
+}
+
+.cat-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid black;
+}
+
+.container div {
+    position: absolute;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}

@@ -1,0 +1,27 @@
+#container {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+}
+
+#container div {
+    position: absolute;
+    background-color: red;
+}
+
+.horizontal {
+    position: absolute;
+    height: 10px;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+
+.vertical {
+    position: absolute;
+    top: 0;
+    left : 20px;
+    height: 100%;
+    width: 10px;
+}

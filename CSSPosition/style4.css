@@ -1,0 +1,48 @@
+
+
+
+.red-background {
+    background-color: red;
+    height: 150px;
+    width: 200px;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+
+.silver-edges {
+    width: 30px;
+    height: 30px;
+    background-color: silver;
+    position: absolute;
+    top: 0;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+}
+
+#edge-1 {
+    left:0;
+    /* border-top-left-radius: 0;
+    border-top-right-radius: 5px; */
+
+}
+
+#edge-2 {
+    right:0;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 0; */
+
+}
+
+.white-space {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+    height: 120px;
+    background-color: white;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

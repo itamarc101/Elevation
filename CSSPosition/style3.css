@@ -1,0 +1,63 @@
+
+.background {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(4, 117, 222);
+    position: relative;
+}
+
+.text {
+    font-family: arial;
+    position: absolute;
+    font-weight: bold;
+    /* padding: 2px; */
+    padding: 0px 10px;
+}
+
+#money {
+  top: 0;
+  left: 0;
+}
+
+
+#time {
+  bottom: 0;
+  right: 0;
+}
+
+.bar {
+    position: absolute;
+    width: 20px;
+    bottom: 0;
+    left: 10px;
+    background-color: rgb(255, 0, 0);
+}
+
+#bar-1 {
+    height: 30px;
+}
+
+#bar-2 {
+    height: 110px;
+    left: 50px;
+}
+
+#bar-3 {
+    height: 180px;
+    left: 90px;
+}
+
+#bar-4 {
+    height: 150px;
+    left: 130px;
+}
+
+#bar-5 {
+    height: 110px;
+    left: 170px;
+}
+
+#bar-6 {
+    height: 80px;
+    left: 220px;
+}

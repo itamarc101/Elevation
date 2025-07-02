@@ -1,0 +1,44 @@
+.container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(214, 244, 244);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    display: flex;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Tablet 601px to 900px */
+@media (min-width: 601px) {
+  h1 {
+    font-size: 36px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Desktop 901px  */
+@media (min-width: 901px) {
+  h1 {
+    font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

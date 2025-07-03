@@ -91,7 +91,10 @@ body {
 }
 
 .user-info {
+    display: flex;
+    align-items: center;
     gap: 1rem;
+    font-size: 18px;
 }
 
 .user-avatar {
@@ -103,6 +106,7 @@ body {
     justify-content: center;
     color: white;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 .stats-grid {

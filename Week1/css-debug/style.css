@@ -381,11 +381,12 @@ body {
 }
 
 .search-box {
-    width: 120px;
+    width: 180px;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 0.5rem;
     font-size: 0.9rem;
+    
 }
 
 .search-box:focus {

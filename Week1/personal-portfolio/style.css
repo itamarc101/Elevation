@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -applesystem, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.no-top-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+p {
+    color: #a4acba;
+}
+
+.container {
+  /* width: 100%; */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar {
+    
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position:sticky;
+    top: 0;
+}
+
+.navbar .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 5rem;
+    gap: 2rem;
+}
+
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6892ec;
+}
+
+.nav-right {
+    padding-right: 10rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #aab3bf;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #3498db;
+}
+
+
+.top-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 6rem;
+    background: linear-gradient(to bottom, #f5f8fb, #e2e8f0);
+}
+
+
+.top-left {
+    flex: 1;
+}
+
+.top-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2562ee;
+    color: #99b5f1;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1841d1;
+}
+
+
+.about-me .container {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 6rem;
+
+}
+
+.about-left, .about-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-left {
+    flex: 2;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.skill-section {
+    width: 100%;
+    max-width: 400px;
+}
+
+.skill {
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 1.5rem;
+    /* gap: 2rem; */
+}
+
+.skill-name {
+    /* flex: 0 0 100px; */
+    /* width: 80px; */
+    color: #959da7;
+    font-size: 1rem;
+    width: 100px;
+    margin-right: 200px;
+    /* flex-shrink: 0; */
+}
+
+.progress-bar {
+  width: 100px;
+  height: 8px;
+  background-color: #dfe1f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+
+.progress-fill {
+  height: 100%;
+  background-color: #2563eb;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}

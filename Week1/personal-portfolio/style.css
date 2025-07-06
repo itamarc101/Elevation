@@ -159,9 +159,9 @@ h1 {
 }
 
 .skill {
-    display:flex;
+    display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin-bottom: 1.5rem;
     /* gap: 2rem; */
 }
@@ -173,15 +173,17 @@ h1 {
     font-size: 1rem;
     width: 100px;
     margin-right: 200px;
-    /* flex-shrink: 0; */
+    flex-shrink: 0;
 }
 
 .progress-bar {
-  width: 100px;
+  min-width: 100px;
   height: 8px;
   background-color: #dfe1f0;
   border-radius: 10px;
   overflow: hidden;
+  flex-shrink: 0;
+  margin-left: -100px;
 }
 
 .skills-title {

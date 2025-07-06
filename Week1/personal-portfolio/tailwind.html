@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itamar Cohen Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow z-50">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <span class="text-blue-600 font-bold text-lg">Itamar Cohen</span>
+        <input type="checkbox" id="nav-toggle" class="hidden peer" />
+        <label
+          for="nav-toggle"
+          class="md:hidden cursor-pointer text-2xl peer-checked:hidden"
+          >☰</label
+        >
+        <nav
+          class="hidden peer-checked:flex flex-col absolute top-full right-0 bg-white w-40 shadow-md p-4 md:flex md:flex-row md:static md:shadow-none md:w-auto md:p-0"
+        >
+          <ul class="flex flex-col gap-4 md:flex-row md:gap-8">
+            <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-500">About</a></li>
+            <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-b from-gray-100 to-gray-200 py-16">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
+        <div class="flex-1">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">Full-Stack Developer</h1>
+          <p class="text-gray-600 mb-6">
+            I build responsive and modern web interfaces with HTML, CSS, and JavaScript.
+          </p>
+          <a href="mailto:itamarc101@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+            Get in Touch
+          </a>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/003/715/527/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-vector.jpg"
+            alt="Profile"
+            class="rounded-full w-48 h-48 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12">
+        <div class="flex-1">
+          <h1 class="text-3xl font-bold mb-4">About Me</h1>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, placeat mollitia! Porro quae aperiam velit non praesentium nihil sit dolorum culpa molestiae dolore enim, voluptatum delectus facere aliquid qui rerum eaque reiciendis! Repellendus perferendis, inventore ducimus mollitia, illum laborum voluptates illo molestias aliquid itaque consequatur vel autem quo accusamus ratione?
+          </p>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-xl font-semibold mb-4">Skills</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>JavaScript</span><span>90%</span>
+              </div>
+              <div class="bg-gray-200 h-2 rounded">
+                <div class="bg-blue-600 h-2 rounded w-[90%]"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>React</span><span>85%</span>
+              </div>
+              <div class="bg-gray-200 h-2 rounded">
+                <div class="bg-blue-600 h-2 rounded w-[85%]"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>NodeJS</span><span>80%</span>
+              </div>
+              <div class="bg-gray-200 h-2 rounded">
+                <div class="bg-blue-600 h-2 rounded w-[80%]"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>MongoDB</span><span>75%</span>
+              </div>
+              <div class="bg-gray-200 h-2 rounded">
+                <div class="bg-blue-600 h-2 rounded w-[75%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h1 class="text-3xl font-bold text-center mb-12">My Projects</h1>
+        <div class="grid gap-8 md:grid-cols-3">
+          
+          <div class="bg-white shadow rounded overflow-hidden">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQFvq7NCj9_bBQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1713774936624?e=1754524800&v=beta&t=BKJqeVdDRVRg-oZmVvSGOBlDJXvyALbwCxxnTkwXdYk" class="h-48 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="font-bold text-xl mb-2">Unity 3D Adventure RPG Game</h3>
+              <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet...</p>
+              <a href="#" target="_blank"
+                class="inline-block mt-4 px-4 py-2 bg-amber-500 text-white font-semibold rounded-md text-sm no-underline transition-colors duration-300 hover:bg-amber-600">
+                View Project</a>
+
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded overflow-hidden">
+            <img src="dl.webp" class="h-48 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="font-bold text-xl mb-2">Unity 3D Adventure RPG Game</h3>
+              <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet...</p>
+              <a href="#" target="_blank"
+                class="inline-block mt-4 px-4 py-2 bg-amber-500 text-white font-semibold rounded-md text-sm no-underline transition-colors duration-300 hover:bg-amber-600">
+                View Project</a>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded overflow-hidden">
+            <img src="ezstudy.png" class="h-48 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="font-bold text-xl mb-2">Unity 3D Adventure RPG Game</h3>
+              <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet...</p>
+              <a href="#" target="_blank"
+                class="inline-block mt-4 px-4 py-2 bg-amber-500 text-white font-semibold rounded-md text-sm no-underline transition-colors duration-300 hover:bg-amber-600">
+                View Project</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <h1 class="text-3xl font-bold text-center mb-12">Get In Touch</h1>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="flex-1 space-y-6">
+            <div>
+              <label for="name" class="block font-semibold mb-1">Name</label>
+              <input type="text" id="name" class="w-full border p-2 rounded" />
+            </div>
+            <div>
+              <label for="email" class="block font-semibold mb-1">Email</label>
+              <input type="email" id="email" class="w-full border p-2 rounded" />
+            </div>
+            <div>
+              <label for="message" class="block font-semibold mb-1">Message</label>
+              <textarea id="message" rows="4" class="w-full border p-2 rounded"></textarea>
+            </div>
+            <a href="mailto:itamarc101@gmail.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+              Send Message
+            </a>
+          </div>
+          <div class="flex-1 space-y-4">
+            <h3 class="text-xl font-semibold">Contact Information</h3>
+            <div class="flex items-center gap-2">
+              <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtIdjB9G3kNBx-YwoEr9wgd83Yb4UNOSq_hA&s" class="w-5 h-5" />
+              <span>itamarc101@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAYaPc2aJB1Njg-1ETKaGrwoMh-dPaP5rFQ&s" class="w-5 h-5" />
+              <span>+972-507636776</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Red_Pin_Emoji.png?9898922749706957214" class="w-5 h-5" />
+              <span>Center District, Israel</span>
+            </div>
+            <div class="flex gap-4 mt-4">
+              <a href="https://www.linkedin.com/in/itamarc0hen/" target="_blank" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-slate-100 no-underline hover:bg-blue-700 transition-transform duration-200 hover:scale-110">in</a>
+              <a href="https://github.com/itamarc101/" target="_blank" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-slate-100 no-underline hover:bg-blue-700 transition-transform duration-200 hover:scale-110">Git</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 mt-12 text-center text-white">
+      <p>&copy; Itamar Cohen. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

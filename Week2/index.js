@@ -49,20 +49,3 @@
 // console.log(a)
 // console.log(b)
 // console.log(c)
-
-
-// let x = [
-// {name: "ant", color: "brown"},
-// {name: "flower", color: "green"}
-// ]  
-
-// x.push({name: "ant", color: "green"});
-
-// console.log(x);
-
-let car = {wheels: 4}
-
-car['color'] = 'blue';
-
-let x = [ {human: {name: 'Daena', age: 31} } ][0].age ;
-console.log(x);

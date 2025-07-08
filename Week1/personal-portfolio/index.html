@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itamar Cohen Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header class="navbar">
@@ -34,8 +36,18 @@
 
             <div class="top-left">
                 <h1>Full-Stack Developer</h1>
-                <p>I build responsive and modern web interfaces with HTML, CSS, and JavaScript.</p>
-                <a href="mailto:itamarc101@gmail.com"  class="btn">Get in Touch</a>
+                <p><strong>Computer Science Graduate. Full Stack Certified.
+                   Cybersecurity Instructor at Magshimim.</strong></p>
+                <div class="buttons-section">
+                    <a href="https://www.linkedin.com/in/itamarc0hen/" target="_blank" class="icon-btn" aria-label="LinkedIn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/itamarc101/" target="_blank" class="icon-btn" aria-label="GitHub">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+                    </a>
+                    <!-- <div class="contact-btn">x</div> -->
+                </div>
+                <!-- <a href="mailto:itamarc101@gmail.com"  class="btn">Get in Touch</a> -->
             </div>
 
             <div class="top-right">
@@ -48,10 +60,17 @@
 
             <div class="about-left">
                 <h1>About Me</h1>
-                <p>Motivated and skilled Software Developer with strong problem-solving abilities and a deep understanding of
-                   Object-Oriented Programming, Design Patterns, and data structures. A creative thinker with a passion for
-                   algorithms and solving complex problems. Possesses exceptional interpersonal and communication skills, and
-                   the capacity to work both independently and within a team.
+                <p>I'm a <strong>Computer Science Graduate</strong> with strong <strong>problem-solving</strong> abilities and a deep understanding of
+                    <strong>OOP, Design Patterns, and data structures.</strong> A creative thinker with a passion for algorithms and solving
+                    complex problems. Possesses exceptional interpersonal and communication skills, and the capacity to work
+                    both independently and within a team.
+                </p>
+                <br>
+                <p>
+                Completed a Full Stack bootcamp.
+                </p>
+                <p>
+                Cybersecurity Instructor at Magshimim Program.
                 </p>
             </div>
 
@@ -141,7 +160,7 @@
             <h1>Get In Touch</h1>
 
             <div class="get-in-touch-content">
-                <div class="get-in-touch-left">
+                <form class="get-in-touch-left" id="contact-form">
 
                     <div class="info">
                         <label for="first-name">Name</label>
@@ -159,11 +178,16 @@
                     </div>
 
                     <div class="button">
-                        <a href="mailto:itamarc101@gmail.com" class="btn btn-msg">Send Message</a>
+                        <!-- <a href="mailto:itamarc101@gmail.com" class="btn btn-msg">Send Message</a> -->
+                        <button type="submit" class="btn btn-msg">Send Message</button>
+                        <div id="success-msg" class="success-msg hidden">
+                            Your message was sent successfully!
+                        </div>
+
                     </div>
 
 
-                </div>
+                </form>
 
                 <div class="get-in-touch-right">
                     <div class="contact-section">
@@ -184,16 +208,6 @@
                             <span class="my-location">Center District, Israel</span>
                         </div>
                     </div>
-
-                    <div class="buttons-section">
-                        <a href="https://www.linkedin.com/in/itamarc0hen/" target="_blank" class="icon-btn" aria-label="LinkedIn">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
-                        </a>
-                        <a href="https://github.com/itamarc101/" target="_blank" class="icon-btn" aria-label="GitHub">
-                            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
-                        </a>
-                        <!-- <div class="contact-btn">x</div> -->
-                    </div>
                 </div>   
             </div>                   
         </div>
@@ -204,6 +218,40 @@
         <p class="text-footer">&copy; Itamar Cohen. All rights reserved.</p>
     </footer>
 
+
+    <script type="module">
+        emailjs.init("_Q7amS-u5IYdo0Sw0"); 
+
+        document.querySelector(".btn-msg").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name")?.value || "";
+        const email = document.getElementById("email")?.value || "";
+        const message = document.getElementById("message")?.value || "";
+
+        if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return;
+        }
+
+        emailjs.send("service_8wba09e", "portfolio_mail", {
+        name: name,
+        email: email,
+        message: message
+        }).then(() => {
+        document.getElementById("success-msg").classList.remove("hidden");
+
+        setTimeout(() => {
+        document.getElementById("success-msg").classList.add("hidden");
+        }, 5000);
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        }, (error) => {
+        alert("Failed to send message: " + error.text);
+        });
+    });
+    </script>
 
 
             

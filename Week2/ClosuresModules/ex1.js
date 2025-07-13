@@ -1,17 +1,19 @@
 const StringFormatter = function () {
-  return {
-    capitalizeFirst: function (str) {
-      if (!str) return ""
-      return str[0].toUpperCase() + str.slice(1).toLowerCase()
-    },
-    toSkewerCase: function (str) {
-      return str.replace(/ /g, "-")
+    const capitalizeFirst = function (str) {
+      return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+    }
+  
+    const toSkewerCase = function (str) {
+      return str.replaceAll(" ", "-")
+    }
+  
+    return {
+      capitalizeFirst: capitalizeFirst,
+      toSkewerCase: toSkewerCase
     }
   }
-}
-
-// Usage:
-const formatter = StringFormatter()
-
-console.log(formatter.capitalizeFirst("dorothy"))  // Dorothy
-console.log(formatter.toSkewerCase("blue box"))   // blue-box
+  
+  const formatter = StringFormatter()
+  console.log(formatter.capitalizeFirst("dorOthy")) // Dorothy
+  console.log(formatter.toSkewerCase("blue box"))   // blue-box
+  

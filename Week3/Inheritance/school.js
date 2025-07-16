@@ -1,15 +1,49 @@
 class Person {
-    constructor(name, startYear) {
+    constructor(name, birthYear) {
         this.name = name;
-        this.startYear = startYear;
+        this.birthYear = birthYear;
     }
 
 }
 
-class Principal extends Person{
-    constructor() {
-        teachers = []
+class Teacher extends Person {
+    constructor(name, birthYear, salary) {
+        super(null, birthYear);
+        this.name = name;
+        this.salary = salary;
     }
+}
+
+class Student extends Person {
+    constructor(name, birthYear) {
+        super(name, birthYear);
+    }
+}
+
+class Principal extends Person{
+    constructor(name, birthYear) {
+        super(name, birthYear);
+        this.teachers = []
+        this.students = []
+    }
+
+    hireTeacher(teacher) {
+        this.teachers.push(teacher);
+        console.log(`${this.name} just hired ${teacher.name}`);
+    }
+
+    recruitStudent(student) {
+    this.students.push(student);
+  }
+
+  expelStudent(student) {
+    this.students = this.students.filter(s => s.name !== student.name);
+  }
+
+  transferStudent(student, newPrincipal) {
+    this.expelStudent(student);
+    newPrincipal.recruitStudent(student);
+  }
 
 }
 

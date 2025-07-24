@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post Renderer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+
+    input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    #posts-container {
+      margin-top: 20px;
+    }
+
+    .post {
+      background-color: #ecf0f1;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .post:hover {
+      background-color: #d0d7d9;
+    }
+
+    .post strong {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="nameInput" placeholder="Your name" />
+  <input type="text" id="textInput" placeholder="Write something..." />
+  <button id="submitBtn">Post</button>
+
+  <div id="posts-container"></div>
+
+  <script>
+    const posts = [
+      { name: "Alice", text: "Hello world!" },
+      { name: "Bob", text: "This is a great day." }
+    ];
+
+    function render() {
+      const container = document.getElementById("posts-container");
+      container.innerHTML = ""; // prevent duplication
+
+      posts.forEach((post, index) => {
+        const div = document.createElement("div");
+        div.classList.add("post");
+        div.innerHTML = `<strong>${post.name}</strong>: ${post.text}`;
+        
+        // Bonus: click to remove post
+        div.addEventListener("click", () => {
+          posts.splice(index, 1);
+          render();
+        });
+
+        container.appendChild(div);
+      });
+    }
+
+    document.getElementById("submitBtn").addEventListener("click", () => {
+      const name = document.getElementById("nameInput").value.trim();
+      const text = document.getElementById("textInput").value.trim();
+
+      if (name && text) {
+        posts.push({ name, text });
+        document.getElementById("nameInput").value = "";
+        document.getElementById("textInput").value = "";
+        render();
+      }
+    });
+
+    // Initial render
+    render();
+  </script>
+
+</body>
+</html>

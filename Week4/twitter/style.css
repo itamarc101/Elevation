@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f3f5;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #1da1f2;
+}
+
+#twit-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#twit {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#twit:hover {
+  background-color: #1991da;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.post-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.delete {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.comments {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.comment {
+  background-color: #e6e6e6;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.delete-comment {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.comment-input {
+  margin-top: 10px;
+  padding: 5px;
+  width: calc(100% - 100px);
+}
+
+.comment-button {
+  padding: 6px 10px;
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  background-color: #0e8bc2;
+}

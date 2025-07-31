@@ -1,0 +1,244 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; /* Space between main container and sidebar */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Main Content Container */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 700px; /* Fixed width for the main content area */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+/* User Header Section */
+.user-header {
+    background-color: #38a1db; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+#main-user-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid white; 
+}
+
+.user-info h2 {
+    margin: 0;
+    font-size: 1.8em; 
+}
+
+.user-info p {
+    margin: 0; 
+    font-size: 1.1em; 
+}
+
+/* General Section Styling (Quote, Pokemon, About Me) */
+section {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 15px;
+}
+
+section h3 {
+    margin-top: 0; 
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+/* Favorite Quote Section Specifics */
+.favorite-quote-section blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding-left: 15px;
+    border-left: 3px solid #ccc; 
+}
+
+.favorite-quote-section .quote-author {
+    text-align: right; 
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Favorite Pokemon Section Specifics */
+.favorite-pokemon-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+#pokemon-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    image-rendering: pixelated; 
+    
+}
+
+/* About Me Section Specifics */
+#about-me-text {
+    line-height: 1.6; 
+    color: #444;
+}
+
+
+/* Actions (Buttons and Dropdown) */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.actions button:hover {
+    background-color: #218838;
+}
+
+.save-load-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.save-load-controls button {
+    background-color: #007bff; 
+}
+
+.save-load-controls button:hover {
+    background-color: #0056b3;
+}
+
+#saved-users-dropdown {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    min-width: 150px; 
+}
+
+.friends-sidebar {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; 
+    height: fit-content; 
+    align-self: flex-start; 
+}
+
+.friends-sidebar h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#friends-list {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#friends-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee; 
+    color: #555;
+}
+
+#friends-list li:last-child {
+    border-bottom: none; 
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: none; 
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px;
+    }
+
+    .container, .friends-sidebar {
+        width: 90%; 
+        max-width: 700px; 
+    }
+
+    .save-load-controls {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    #saved-users-dropdown {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .user-header {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .user-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main-user-picture {
+        margin-bottom: 10px;
+    }
+}

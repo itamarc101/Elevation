@@ -11,7 +11,7 @@ async function fetchBookDetails(queryType, queryValue) {
     const title = item.volumeInfo.title;
     const authors = item.volumeInfo.authors?.join(", ") || "N/A";
     const isbn = item.volumeInfo.industryIdentifiers?.map(id => id.identifier).join(", ") || "N/A";
-    console.log(`Title: ${title}, Author(s): ${authors}, ISBN(s): ${isbn}`);
+    console.log(`Title: ${title}\nAuthor(s): ${authors}\nISBN(s): ${isbn}`);
   });
 }
 

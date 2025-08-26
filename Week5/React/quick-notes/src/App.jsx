@@ -1,8 +1,16 @@
+import Exercise1 from './Exercise1';
 import logo from './logo.svg';
 // import './App.css';
 import QuickNotes from './QuickNotesApp';
 
-export default function App(){ return <QuickNotes />; }
+export default function App(){ 
+    return (
+        <div>
+        <Exercise1 />
+        <QuickNotes />
+        </div>
+    ); 
+}
 
 
 // function App() {

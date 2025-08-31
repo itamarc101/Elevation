@@ -1,0 +1,27 @@
+[
+  {
+    "id": "2",
+    "name": "Pancakes",
+    "ingredients": [
+      "flour",
+      "milk",
+      "egg"
+    ]
+  },
+  {
+    "id": "36fa6ccc-e6c3-4c36-a3a0-19d6e2618b6d",
+    "title": "Test Recipe",
+    "description": "A valid description",
+    "ingredients": [
+      "ingredient1"
+    ],
+    "instructions": [
+      "step1"
+    ],
+    "cookingTime": 10,
+    "servings": 2,
+    "difficulty": "easy",
+    "rating": null,
+    "createdAt": "2025-08-31T15:39:24.043Z"
+  }
+]
